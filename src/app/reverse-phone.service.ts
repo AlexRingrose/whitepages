@@ -5,10 +5,14 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ReversePhoneService {
-
-  constructor(public _http:HttpClient) { }
-  getPhoneLookup(path) {
-      // return  this._http.get( 'https://proapi.whitepages.com/3.0/phone?phone=2061115201&api_key=API_KEY/'+path );
-      console.log("Phone service works")
+  api_key;
+  constructor(public _http : HttpClient) {
+    this.api_key="4deef5294a724373ba7c654f4ad08998";
+  }
+  
+  phoneLookup(number) {
+      console.log("phoneLookup has fired")
+      console.log("Number: "+ number);
+      // return  this._http.get( 'https://proapi.whitepages.com/3.0/phone?phone=' + number + '&api_key=' + this.api_key);
     }
-}
+};
