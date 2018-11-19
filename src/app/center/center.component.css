@@ -1,0 +1,23 @@
+#center{
+    width:100%;
+    height:70%;
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+}
+.module{
+    width:696px;
+    height:310px;
+    background-color: grey;
+    padding: 14;
+    margin-bottom: 24px;
+}
+.premium{
+    
+}
+.background{
+    
+}
+.phone-stats{
+    
+}

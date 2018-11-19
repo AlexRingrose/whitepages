@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { ReversePhoneService } from 
   './reverse-phone.service';
+import { CenterComponent } from './center/center.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CenterComponent
   ],
   imports: [
     BrowserModule,

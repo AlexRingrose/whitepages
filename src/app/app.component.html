@@ -1,34 +1,41 @@
-<div id="header">
-  <input [(ngModel)]="inputNum">
-  <button (click)="onClick()">ClickMe</button>
-</div>
 <div id="main">
-  <div id="center">
-    <div class="module">
-      <div class="module-content">
-        
+  <div id="header">
+      <a href="">
+        <img width="190px" height="50px" 
+              src="../assets/whitepages-logo.svg">
+              
+      </a>
+      <div class="form-select">
+        <div class="tabBox">
+        <button class="un-button tab" (click)="setPerson()">PERSON</button>
+        </div>
+        <div class="tabBox">
+        <button class="un-button tab" (click)="setPhone()">PHONE</button>
+        </div>
+        <div class="tabBox">
+        <button class="un-button tab" (click)="setAddress()">REVERSE ADDRESS</button>
+        </div>
+        <div class="tabBox">
+        <button class="un-button tab" (click)="setBusiness()">BUSINESS</button>
+        </div>
       </div>
-    </div>
-    <div class="module premium">
-      <div class="module-content">
-        
+      <div class="form-wrap">
+        <div class = "formPhone" *ngIf="viewControl===2">
+          <input class="form" [(ngModel)]="inputNum">
+          <button id="searchIcon" class="un-button" 
+                  (click)="searchPhone()">
+            
+            <img height="32px" width="32px" 
+                  src="../assets/whitepages-search.svg">
+                  
+          </button>
+        </div>
+        <div class="form-wrap" *ngIf="viewControl!==2">
+          <input class="form" placeholder="Not Implemented">
+        </div>
       </div>
-    </div>
-    <div class="module background">
-      <div class="module-content">
-        
-      </div>
-    </div>
-    <div class="module phone-stats">
-      <div class="module-content">
-        
-      </div>
-    </div>
   </div>
-  <div id="similar-numbers">
-    
+  <div id="center-wrap">
+    <app-center></app-center>
   </div>
 </div>
-  
-
-<router-outlet></router-outlet>
