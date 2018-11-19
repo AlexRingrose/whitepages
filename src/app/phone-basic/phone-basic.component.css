@@ -1,0 +1,62 @@
+.icon{
+    width:40px;
+    height:40px;
+    margin: 25px 24px 18px;
+}
+.smallIcon{
+    width:31px;
+    height:31px;
+    margin-right: 25px;
+}
+h1{
+    margin-bottom: 5px;
+    margin-top:5px;
+}
+#censor{
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.content-wrapper{
+    height: 85px;
+    width: 595px;
+    border-bottom: solid 1px #dbdbdb;
+    padding-top:20px;
+}
+.content-section{
+    display: flex;
+    justify-content:flex-start;
+    padding-bottom:20px;
+}
+.detailWrap{
+    display: flex;
+    justify-content:flex-start;
+}
+.subText{
+    color: #777!important;
+    font-size:14px;
+}
+.phonetext{
+    margin-right: 15px;
+    margin-top: 0px;
+}
+.ownertext{
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.link{
+    color:#4090e0!important;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.flexy{
+    display:flex;
+}
+.end{
+    border-bottom:none;
+}

@@ -8,11 +8,13 @@ import { FormsModule } from '@angular/forms';
 import { ReversePhoneService } from 
   './reverse-phone.service';
 import { CenterComponent } from './center/center.component';
+import { PhoneBasicComponent } from './phone-basic/phone-basic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CenterComponent
+    CenterComponent,
+    PhoneBasicComponent
   ],
   imports: [
     BrowserModule,

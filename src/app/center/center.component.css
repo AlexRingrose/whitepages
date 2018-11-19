@@ -8,16 +8,13 @@
 .module{
     width:696px;
     height:310px;
-    background-color: grey;
+    background-color: #fff;
     padding: 14;
     margin-bottom: 24px;
+    box-shadow:0 2px 2px rgba(0,0,0,0.15), 0 2px 5px rgba(0,0,0,0.15);
+    display:flex;
 }
-.premium{
-    
-}
-.background{
-    
-}
-.phone-stats{
-    
+.module-content{
+    width:614px;
+    height:310px;
 }

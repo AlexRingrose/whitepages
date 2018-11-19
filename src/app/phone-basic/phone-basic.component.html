@@ -1,0 +1,37 @@
+<div class="module">
+    <div class="icon">
+        <img src="../assets/whitepages-phone.svg">
+    </div>
+    <div class="module-content">
+        <div class="content-wrapper">
+            <h1 id="dispNumber">{{parseNumber()}}</h1>
+            <div class="detailWrap">
+                <p class="subText phonetext">
+                    <strong>Type: </strong>{{_api.resData.line_type}}
+                </p>
+                <p class="subText phonetext">
+                    <strong>Carrier: </strong>{{_api.resData.carrier}}
+                </p>
+            </div>
+        </div>
+        <div class="content-wrapper flexy">
+            <img class="smallIcon" src="../assets/whitepages-head.svg">
+            <div class="section-content">
+                <p class="subText ownertext">PHONE NUMBER OWNER</p>
+                <h3 id="censor">{{censorName()}}</h3>
+                <p class="subText link">View owner's name</p>
+            </div>
+        </div>
+        <div class="content-wrapper end flexy">
+            <img class="smallIcon" src="../assets/whitepages-check.svg">
+            <div class="section-content">
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!--<h1 id="dispNumber">{{_api.resData.phone_number}}</h1>-->
+        <!--<p>{{_api.resData.line_type}}</p>-->
+        <!--<p>{{_api.resData.carrier}}</p>-->
+        <!--<p>{{_api.resData.belongs_to[0].name}}</p>-->
